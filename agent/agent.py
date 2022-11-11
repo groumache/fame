@@ -21,7 +21,7 @@ sys.path.append(AGENT_ROOT)
 
 
 def is_iterable(element):
-    return isinstance(element, collections.Iterable) and not isinstance(element, str)
+    return isinstance(element, collections.abc.Iterable) and not isinstance(element, str)
 
 
 def iterify(element):
